@@ -45,7 +45,6 @@ Usage:
 
 You need to add code in view related files where ever you need the modal:
 
-<pre>
   <a href="#" data-reveal-id="myModal" >Click Me For A Modal</a>
 
   <div id="myModal" class="reveal-modal">
@@ -53,7 +52,6 @@ You need to add code in view related files where ever you need the modal:
 	<p>Any content could go in here.</p>
 	<a class="close-reveal-modal">&#215;</a>
   </div>
-</pre>
 
 
 Reference Site:
