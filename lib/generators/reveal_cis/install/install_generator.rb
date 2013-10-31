@@ -12,7 +12,7 @@ if ::Rails.version < "3.1" || !::Rails.application.config.assets.enabled
           copy_file "javascripts/jquery-1.4.4.min.js", "public/javascripts/jquery-1.4.4.min.js"
           copy_file "javascripts/jquery.reveal.js", "public/javascripts/jquery.reveal.js"
           copy_file "stylesheets/reveal.css", "public/stylesheets/reveal.css"
-          copy_file "images/modal-gloss.png", "public/images/modal-gloss.png"
+          copy_file "stylesheets/modal-gloss.png", "public/stylesheets/modal-gloss.png"
         end
       end
     end
@@ -33,7 +33,7 @@ else
           end
           if detect_css_format.nil?
             copy_file "stylesheets/jquery.notifications.css", "app/assets/stylesheets/jquery.notifications.css"
-            copy_file "images/modal-gloss.png", "app/assets/images/modal-gloss.png"
+            copy_file "stylesheets/modal-gloss.png", "app/assets/stylesheets/modal-gloss.png"
           else
             insert_into_file "app/assets/stylesheets/application#{detect_css_format[0]}", "#{detect_css_format[1]} require reveal\n", :after => "require_self\n"
           end
