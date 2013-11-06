@@ -1,6 +1,6 @@
 require 'rails'
 
-if ::Rails.version < "3.1" || !::Rails.application.config.assets.enabled
+if ::Rails.version < "3.1"
   module RevealCis
     module Generators
       class InstallGenerator < ::Rails::Generators::Base
