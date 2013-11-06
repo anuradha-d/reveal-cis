@@ -45,6 +45,7 @@ else
           return ['.js', '//='] if File.exist?('app/assets/javascripts/application.js')
         end
         def detect_css_format
+          return ['.css.scss', '*='] if File.exist?('app/assets/stylesheets/application.css.scss')
           return ['.css', '*='] if File.exist?('app/assets/stylesheets/application.css')
         end
       end
