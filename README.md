@@ -26,6 +26,8 @@ bundle install
 
 ### Configuration
 
+For Rails version <= 2 follow the below steps:
+
 Then you need to add the following line on your application.js
 
 ```
@@ -37,6 +39,12 @@ Then add the required line in application.css
 
 ```
   *= require reveal
+```
+
+For Rails version >= 3 run the following command
+
+```
+  rails g reveal_cis:install
 ```
 
 ### Usage
